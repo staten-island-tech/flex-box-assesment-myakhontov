@@ -1,0 +1,17 @@
+html{
+    margin: 0;
+    border: 0;
+    display: border-box;
+    font-size: 62.5%;
+}
+
+header{
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(236, 127, 55, 0.5),
+        rgba(255, 255, 255, 0.5)
+    ),
+    url(https://www.nps.gov/stli/planyourvisit/images/Liberty-statue-with-manhattan_1.jpg?maxwidth=1200&maxheight=1200&autorotate=false);
+    background-size: cover;
+}
