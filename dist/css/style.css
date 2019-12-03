@@ -5,10 +5,26 @@ html {
   font-size: 62.5%;
 }
 
-header {
+.flex-parent {
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(236, 127, 55, 0.5)), to(rgba(255, 255, 255, 0.5))), url(https://www.nps.gov/stli/planyourvisit/images/Liberty-statue-with-manhattan_1.jpg?maxwidth=1200&maxheight=1200&autorotate=false);
-  background-image: linear-gradient(to right bottom, rgba(236, 127, 55, 0.5), rgba(255, 255, 255, 0.5)), url(https://www.nps.gov/stli/planyourvisit/images/Liberty-statue-with-manhattan_1.jpg?maxwidth=1200&maxheight=1200&autorotate=false);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(66, 133, 244, 0.4)), to(rgba(255, 255, 255, 0.5))), url(https://d.newsweek.com/en/full/1544551/new-york-city-skyline.jpg);
+  background-image: linear-gradient(to right bottom, rgba(66, 133, 244, 0.4), rgba(255, 255, 255, 0.5)), url(https://d.newsweek.com/en/full/1544551/new-york-city-skyline.jpg);
   background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-child {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+#heading {
+  font-size: 5rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 /*# sourceMappingURL=style.css.map */
