@@ -5,7 +5,7 @@ html{
     font-size: 62.5%;
 }
 
-.flex-parent{
+body{
     height: 100vh;
     background-image: linear-gradient(
         to right bottom,
@@ -14,14 +14,25 @@ html{
     ),
     url(https://d.newsweek.com/en/full/1544551/new-york-city-skyline.jpg);
     background-size: cover;
+
+}
+
+h1{
+    font-size: 5rem; 
+    text-align: center;
+}
+
+.flex-parent{
+    height: 100vh;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .flex-child{
-    justify-content: end;
-}
-
-#heading{
-    font-size: 5rem;
-    align-self: center; //wrong function
+    height: 40vh;
+    width: 30vw;
+    background: chocolate;
+    border: 5px solid black;
+    margin: 5px;
 }
