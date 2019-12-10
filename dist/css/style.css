@@ -6,9 +6,9 @@ html {
 }
 
 body {
-  height: 100vh;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(66, 133, 244, 0.4)), to(rgba(255, 255, 255, 0.5))), url();
-  background-image: linear-gradient(to right bottom, rgba(66, 133, 244, 0.4), rgba(255, 255, 255, 0.5)), url();
+  height: 100rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(68, 138, 255, 0.4)), to(rgba(255, 255, 255, 0.5))), url();
+  background-image: linear-gradient(to right bottom, rgba(68, 138, 255, 0.4), rgba(255, 255, 255, 0.5)), url();
   background-size: cover;
 }
 
@@ -18,7 +18,7 @@ h1 {
 }
 
 .flex-parent {
-  height: 100vh;
+  height: 70rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,17 +27,40 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flex-child {
+  height: 40rem;
+  width: 110rem;
+  background: rgba(149, 117, 205, 0.6);
+  border: 7px solid black;
+  margin: 4rem;
+}
+
+#right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
-.flex-child {
-  height: 40vh;
-  width: 80vw;
-  background: chocolate;
+.flex-grandchild {
+  height: 15rem;
+  width: 50rem;
+  background: saddlebrown;
+  margin: 2rem;
   border: 5px solid black;
-  margin: 5px;
 }
 /*# sourceMappingURL=style.css.map */

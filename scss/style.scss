@@ -6,7 +6,8 @@ html{
 }
 
 $colors:(
-    light-blue: #4285f4
+    light-blue: #448AFF,
+    content-purple: #9575CD
 );
 
 @function color($color-name){
@@ -14,11 +15,11 @@ $colors:(
 }
 
 body{
-    height: 100vh;
+    height: 100rem;
     background-image: linear-gradient(
         to right bottom,
         rgba(color(light-blue), 0.4),
-        rgba(color(white), 0.5)
+        rgba(255, 255, 255, 0.5)
     ),
     url();
     background-size: cover;
@@ -31,17 +32,32 @@ h1{
 }
 
 .flex-parent{
-    height: 100vh;
+    height: 70rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
 }
 
 .flex-child{
-    height: 40vh;
-    width: 80vw;
-    background: chocolate;
+    height: 40rem;
+    width: 110rem;
+    background: rgba(color(content-purple), 0.6);
+    border: 7px solid black;
+    margin: 4rem;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-grandchild{
+    height: 15rem;
+    width: 50rem;
+    background: saddlebrown;
+    margin: 2rem;
     border: 5px solid black;
-    margin: 5px;
 }
