@@ -6,7 +6,9 @@ html{
 }
 
 $colors:(
-    light-blue: #4285f4
+    light-blue: #80D8FF,
+    content-purple: #B388FF
+    
 );
 
 @function color($color-name){
@@ -14,11 +16,11 @@ $colors:(
 }
 
 body{
-    height: 100vh;
+    height: 110rem;
     background-image: linear-gradient(
         to right bottom,
-        rgba(color(light-blue), 0.4),
-        rgba(color(white), 0.5)
+        rgba(color(light-blue), 0.5),
+        rgba(255, 255, 255, 0.5)
     ),
     url();
     background-size: cover;
@@ -26,22 +28,53 @@ body{
 }
 
 h1{
-    font-size: 5rem; 
+    font-size: 10rem; 
     text-align: center;
+    font-family: 'Lobster', cursive;
+
 }
 
 .flex-parent{
-    height: 100vh;
+    height: 90rem;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
+    align-items: flex-start;
+    flex-direction: row;
 }
 
 .flex-child{
-    height: 40vh;
-    width: 80vw;
-    background: chocolate;
-    border: 5px solid black;
-    margin: 5px;
+    height: 50rem;
+    width: 90rem;
+    background: rgba(color(content-purple), 0.7);
+    border: 10px solid black;
+    margin: 10px;
+}
+
+p{
+    font-size: 3rem;
+    text-align: center;
+}
+
+#right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.flex-grandchild{
+    height: 20rem;
+    width: 81rem;
+    background: white;
+    border: 6px solid black;
+}
+
+#top{
+    display: flex;
+    flex-direction: row;
+}
+img{
+    height: 20rem;
+    width: 27rem;
+
 }
