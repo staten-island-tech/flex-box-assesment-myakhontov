@@ -1,0 +1,9 @@
+$colors:(
+    light-blue: #80D8FF,
+    content-purple: #B388FF
+    
+);
+
+@function color($color-name){
+    @return map-get($colors, $color-name)
+}

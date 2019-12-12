@@ -1,18 +1,10 @@
+@import"./_colors";
+
 html{
     margin: 0;
     border: 0;
     display: border-box;
     font-size: 62.5%;
-}
-
-$colors:(
-    light-blue: #80D8FF,
-    content-purple: #B388FF
-    
-);
-
-@function color($color-name){
-    @return map-get($colors, $color-name)
 }
 
 body{
@@ -51,8 +43,10 @@ h1{
 }
 
 p{
-    font-size: 3rem;
+    font-size: 2.7rem;
     text-align: center;
+    font-family: 'Solway', serif;
+    margin: 8rem 5px 5px 5px;
 }
 
 #right{
@@ -73,6 +67,7 @@ p{
     display: flex;
     flex-direction: row;
 }
+
 img{
     height: 20rem;
     width: 27rem;
