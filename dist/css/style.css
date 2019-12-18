@@ -43,9 +43,12 @@ h1 {
 }
 
 p {
-  font-size: 2.7rem;
-  text-align: center;
   font-family: 'Solway', serif;
+}
+
+.left-text {
+  font-size: 2.6rem;
+  text-align: center;
   margin: 2rem 5px 5px 5px;
 }
 
@@ -79,6 +82,12 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+}
+
+#right-text {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .flex-grandchild img {
